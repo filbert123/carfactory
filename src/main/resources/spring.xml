@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id = "fabrictest" class = "Fabric">
+        <property name = "message" value = "123"/>
+    </bean>
+
+    <bean id="mycar" class="Car">
+        <constructor-arg
+    </bean>
+
+    <bean scope="prototype" id="color-red" class="Color">
+        <property name="colorname" value="red"/>
+    </bean>
+    <bean scope="prototype" id="color-black" class="Color">
+        <property name="colorname" value="black"/>
+    </bean>
+    <bean scope="prototype" id="color-white" class="Color">
+        <property name="colorname" value="white"/>
+    </bean>
+    <bean scope="prototype" id="color-blue" class="Color">
+        <property name="colorname" value="white"/>
+    </bean>
+    <bean scope="prototype" id="color-grey" class="Color">
+        <property name="colorname" value="grey"/>
+    </bean>
+</beans>
